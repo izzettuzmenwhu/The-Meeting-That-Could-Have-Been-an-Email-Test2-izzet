@@ -17,7 +17,8 @@
 <li><a href="#problem">Problem</a></li>
 <li><a href="#insight">Insight</a></li>
 <li><a href="#how">How It Works</a></li>
-<li><a href="#demo">Demo</a></li>
+<li><a href="#demo">Demo</a>
+            <a href="#examples">Examples</a></li>
 <li><a href="#model">Model</a></li>
 <li><a href="#value">Benefits</a></li>
 <li><a href="#cta">Get Started</a></li>
@@ -27,23 +28,61 @@
 <!-- Hero Section -->
 <section class="section hero" id="hero">
 <div class="hero-content">
-<div class="hero-tagline">Your calendar deserves better.</div>
+<div class="hero-tagline">Meetings should create decisions. Not exhaustion.</div>
 <!-- Strong headline sets the tone instantly -->
-<h1>This meeting could have been an email.</h1>
+<h1>The Meeting That Could Have Been an Email™</h1>
+
+<p class="hero-subtitle">
+Meetings should confirm decisions, not search for them.
+</p>
+
 <!-- Concise subheading explains the benefit in a single sentence -->
-<p class="hero-subtitle">An adaptive dashboard, built before you meet, so the meeting is only the highlights.</p>
+<p class="hero-subtitle">We turn meetings into decision engines. The dashboard comes first. The meeting confirms momentum.</p>
 <button class="primary-btn" id="hero-demo-btn">Try the Demo</button>
-<div aria-hidden="true" class="hero-preview">
-<div class="hero-preview-header">
-<div class="pill">Live preview</div>
-<div class="pill pill-muted">Auto-running demo</div>
 </div>
-<div class="hero-preview-body">
-<div class="mini-mode" id="mini-mode">Decision Mode</div>
-<div class="mini-grid" id="hero-preview"></div>
-</div>
-</div>
-</div>
+</section>
+
+
+<section class="section examples" id="examples">
+  <div class="container">
+    <div class="examples-header">
+      <h2>What teams actually see.</h2>
+      <p class="examples-intro">Different views. One outcome: decisions that move work forward.</p>
+    </div>
+
+    <div class="ex-carousel" aria-label="Dashboard examples carousel">
+      <button class="ex-nav ex-prev" type="button" aria-label="Previous example">‹</button>
+
+      <div class="ex-stage">
+        <div class="ex-frame" role="group" aria-roledescription="slide" aria-label="Dashboard example">
+          <img id="ex-image"
+               src="dash_0_0.png"
+               alt="Decision mode dashboard example"
+               loading="eager"
+               decoding="async">
+          <div class="ex-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="ex-meta">
+          <div class="ex-mode">
+            <span id="ex-label">Decision</span>
+            <span class="ex-dot">•</span>
+            <span class="ex-muted">Decision → Momentum → Reality → Impact</span>
+          </div>
+          <div class="ex-hint" id="ex-hint">Decisions required, owners assigned, risks surfaced.</div>
+        </div>
+      </div>
+
+      <button class="ex-nav ex-next" type="button" aria-label="Next example">›</button>
+    </div>
+
+    <noscript>
+      <p class="examples-fallback">Enable JavaScript to view the rotating dashboard examples.</p>
+    </noscript>
+  </div>
+</section>
+
+
 </section>
 <!-- Problem Section -->
 <section class="section problem" id="problem">
@@ -134,69 +173,50 @@
 </div>
 </section>
 <!-- Demo Section -->
+
 <section class="section demo" id="demo">
   <div class="container">
-    <h2>Live preview</h2>
-    <p>A dashboard built before the meeting, so the meeting is only the highlights. The view adapts as the work advances.</p>
+    <h2>See the meeting transform.</h2>
+    <p class="demo-intro">
+      Work starts before the meeting. Decisions happen inside it.
+    </p>
 
-    <div class="carousel panel" aria-label="Dashboard preview carousel">
-      <div class="carousel-top">
-        <div class="carousel-title">AI-generated dashboard mockups</div>
-        <div class="carousel-note">Decision → Momentum → Reality → Impact</div>
-      </div>
-
-      <div class="carousel-viewport">
-        <div class="carousel-track" id="carousel-track">
-          <figure class="carousel-slide" data-label="AI Draft 01 · Decision Mode">
-            <img src="dash_0_0.png" alt="Decision mode dashboard mockup"/>
-            <figcaption>
-              <div class="cap-title">AI Draft 01 · Decision Mode</div>
-              <div class="cap-text">Clarify the decision, compare options, surface assumptions before anyone joins the call.</div>
-            </figcaption>
-          </figure>
-
-          <figure class="carousel-slide" data-label="AI Draft 02 · Momentum Mode">
-            <img src="dash_0_1.png" alt="Momentum mode dashboard mockup"/>
-            <figcaption>
-              <div class="cap-title">AI Draft 02 · Momentum Mode</div>
-              <div class="cap-text">Owners, timelines, KPIs, dependencies. Meetings become blocker removal, not discussion.</div>
-            </figcaption>
-          </figure>
-
-          <figure class="carousel-slide" data-label="AI Draft 03 · Reality Mode">
-            <img src="dash_1_0.png" alt="Reality mode dashboard mockup"/>
-            <figcaption>
-              <div class="cap-title">AI Draft 03 · Reality Mode</div>
-              <div class="cap-text">Signals, risks, divergence from plan. This is where denial goes to die.</div>
-            </figcaption>
-          </figure>
-
-          <figure class="carousel-slide" data-label="AI Draft 04 · Impact Mode">
-            <img src="dash_1_1.png" alt="Impact mode dashboard mockup"/>
-            <figcaption>
-              <div class="cap-title">AI Draft 04 · Impact Mode</div>
-              <div class="cap-text">Outcomes, learning, repeatable playbooks. Close the loop and keep what worked.</div>
-            </figcaption>
-          </figure>
+    <div class="transformation-panel">
+        <div class="stage active" id="stage-chaos">
+            <h3>Raw meeting inputs</h3>
+            <ul class="chaos-list">
+                <li>Launch date unclear</li>
+                <li>Marketing and product disagree</li>
+                <li>No owner assigned</li>
+                <li>Budget assumptions conflict</li>
+                <li>Timeline depends on unknown approvals</li>
+            </ul>
         </div>
 
-        <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous">‹</button>
-        <button class="carousel-btn next" id="carousel-next" aria-label="Next">›</button>
-      </div>
+        <div class="stage" id="stage-processing">
+            <div class="spinner"></div>
+            <p>Organizing discussion into decisions…</p>
+        </div>
 
-      <div class="carousel-bottom">
-        <div class="carousel-dots" id="carousel-dots" aria-label="Carousel navigation"></div>
-        <div class="carousel-meta" id="carousel-meta">AI Draft 01 · Decision Mode</div>
-      </div>
+        <div class="stage" id="stage-output">
+            <h3>Decision dashboard</h3>
+            <div class="dash-grid">
+                <div class="dash-card">✔ Confirm launch date<br><span>Owner: Product</span></div>
+                <div class="dash-card">✔ Align budget approval<br><span>Owner: Finance</span></div>
+                <div class="dash-card">⚠ Risk: resource capacity</div>
+                <div class="dash-card">📈 KPI: readiness 72%</div>
+            </div>
+        </div>
     </div>
   </div>
 </section>
+
 <!-- Red Team Module -->
 <section class="section red-team" id="red-team">
 <div class="container">
 <h2 class="red-heading">🔴 Bist du doof™</h2>
 <!-- Conversational microcopy clarifies the purpose of this panel -->
-<p class="red-subtitle">Our AI asks the questions nobody wants to ask.</p>
+<p class="red-subtitle">Before decisions harden, we ask the uncomfortable question.</p>
 <div class="prompt" id="prompt">Who actually owns this?</div>
 </div>
 <div class="bdw-how">
@@ -262,51 +282,52 @@
 <section class="section team" id="team">
 <div class="container">
 <h2>Who we are</h2>
-<p class="team-intro">A consulting team built for decision quality, execution momentum, and organizational behavior. First names only. We’re not hiding. It’s just funnier.</p>
+      <p class="team-lede">We are a consulting team built around decisions, not presentations. Strategy, execution, and human behavior, working together before momentum is lost.</p>
+<</p>
 <div class="team-grid">
 <div class="team-card">
 <div class="team-name">Antje</div>
 <div class="team-role">Digital transformation and human-centered leadership</div>
 <ul class="team-points">
-<li>Turns big institutions into fast-moving organizations.</li>
-<li>Brings OKRs, agile execution, and practical AI leadership.</li>
-<li>Ensures the dashboard changes behavior, not just format.</li>
+<li>Makes big institutions move.</li>
+<li>Turns intent into execution.</li>
+<li>Ensures behavior changes, not slides.</li>
 </ul>
 </div>
 <div class="team-card">
 <div class="team-name">Izzet</div>
 <div class="team-role">Operations, scaling, and performance improvement</div>
 <ul class="team-points">
-<li>Pressure-tests feasibility, capacity, and timelines.</li>
+<li>Pressure-tests feasibility and timelines.</li>
 <li>Turns “sounds good” into “will ship.”</li>
-<li>Makes momentum measurable without bureaucracy.</li>
+<li>Makes momentum measurable.</li>
 </ul>
 </div>
 <div class="team-card">
 <div class="team-name">Jessica</div>
 <div class="team-role">R&amp;D transformation in complex science organizations</div>
 <ul class="team-points">
-<li>Designs decision systems for high-complexity environments.</li>
-<li>Bridges research reality to execution discipline.</li>
-<li>Ensures the tool works where ambiguity is normal.</li>
+<li>Designs decision systems for complexity.</li>
+<li>Bridges research reality to execution.</li>
+<li>Builds for ambiguity.</li>
 </ul>
 </div>
 <div class="team-card">
 <div class="team-name">Riccardo</div>
 <div class="team-role">Strategy, systemic coaching, and growth leadership</div>
 <ul class="team-points">
-<li>Builds the narrative and the client transformation path.</li>
-<li>Spots stakeholder dynamics and hidden blockers.</li>
-<li>Keeps the system human, not robotic.</li>
+<li>Builds the transformation narrative.</li>
+<li>Spots hidden blockers early.</li>
+<li>Keeps it human.</li>
 </ul>
 </div>
 <div class="team-card">
 <div class="team-name">Matthew</div>
 <div class="team-role">Decision advantage and strategic clarity</div>
 <ul class="team-points">
-<li>Sharpens the “why,” the outcomes, and the decision record.</li>
-<li>Designs red-team logic that improves quality, not noise.</li>
-<li>Connects strategy to execution under real constraints.</li>
+<li>Sharpens the why, outcomes, and decision record.</li>
+<li>Builds red-team logic that improves quality.</li>
+<li>Connects strategy to execution.</li>
 </ul>
 </div>
 </div>
@@ -314,7 +335,7 @@
 </section>
 <section class="section cta" id="cta">
 <div class="container cta-container">
-<h2>Your calendar deserves better.</h2>
+<h2>Meetings should create decisions. Not exhaustion.</h2>
 <button class="primary-btn" id="final-btn">Start a Better Meeting</button>
 </div>
 </section>
@@ -324,5 +345,13 @@
 </div>
 </footer>
 <script src="script.js"></script>
+
+<div id="ai-loading" class="ai-loading hidden">
+  <div class="ai-loading-box">
+    <div class="spinner"></div>
+    <p>Analyzing inputs… building decision view</p>
+  </div>
+</div>
+
 </body>
 </html>
